@@ -4,6 +4,30 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="databinder-app-6.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/databinder-app/databinder-app">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="databinder-app-hib-6.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/databinder-app-hib/databinder-app-hib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="databinder-auth-components-6.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/databinder-auth-components/databinder-auth-components">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="databinder-auth-components-hib-6.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/databinder-auth-components-hib/databinder-auth-components-hib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="databinder-components-6.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/databinder-components/databinder-components">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="databinder-components-hib-6.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/databinder-components-hib/databinder-components-hib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="databinder-models-6.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/databinder-models/databinder-models">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="databinder-models-hib-6.0.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/databinder-models-hib/databinder-models-hib">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="databinder-test"/>
         <property name="java-output-path" value="/databinder-test/target/classes"/>
     </wb-module>
